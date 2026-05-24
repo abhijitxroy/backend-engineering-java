@@ -1,209 +1,59 @@
-# Backend Engineering Java Roadmap
-
-Long term repository improvement plan for backend engineering learning, production engineering discussions and knowledge organization.
-
-## Database
-
-Status: Foundation Complete
-
-Completed:
-
-- Data Models
-- ACID Properties
-- Transactions
-- Isolation Levels
-- Indexing
-- Normalization
-- CAP Theorem
-- Locking
-- MVCC
-- Deadlock
-- Replication
-- Partitioning
-- Distributed Systems Discussions
-
-Next Improvements:
-
-P1
-
-- Connection Pooling
-- SQL Optimization
-- Explain Plan
-- N+1 Query Problem
-
-P2
-
-- Scaling Patterns
-- Consistency Models
-- Distributed Transactions
-
-P3
-
-- WAL
-- Buffer Pool
-- Query Optimizer Internals
-
-## Design Patterns
-
-Status: Improvement Pending
-
-Priority Improvements:
-
-- Improve Singleton.md
-- Improve Builder.md
-- Improve FactoryMethod.md
-- Improve Observer.md
-- Improve Strategy.md
-- Improve Decorator.md
-
-Documentation Standardization:
-
-- Add Overview sections
-- Add Benefits sections
-- Add Real World Examples
-- Improve Markdown Consistency
-
-## API Design
-
-Status: Foundation Complete
-
-P1
-
-- HTTP Methods
-- REST Principles
-- Status Codes
-- API Versioning
-- Pagination
-- Filtering
-- Sorting
-- Idempotency
-
-Completed:
-
-- API Module Structure
-- README Organization
-- REST API Fundamentals
-- HTTP Methods
-- HTTP Status Codes
-- API Versioning
-- Pagination
-- Filtering
-- Sorting
-- Idempotency
-
-Next Improvements:
-
-P1
-
-- Request Validation Deep Dive
-- Error Response Standards
-- OpenAPI Documentation
-- Swagger Examples
-
-P2
-
-- Correlation ID Flow
-- Distributed Traceability
-- Retry Pattern Implementation
-- Timeout Strategy
-
-P3
-
-- API Gateway Deep Dive
-- Circuit Breaker API Layer Discussion
-- Webhook Design
-- API Observability
-
-Production Discussions:
-
-- Backward Compatibility
-- Breaking Changes
-- API Scalability
-- Retry Strategy
-- Timeout Handling
-- Correlation ID
-- Traceability
-- API Security
-- Rate Limiting
-
-Future Enhancements:
-
-- GraphQL Fundamentals
-- gRPC Basics
-- API Deprecation Strategy
-- API Contract Testing
-- Consumer Driven Contracts
-- API Monitoring
-- API Analytics
-
-## Messaging
-
-Status: Foundation Complete
-
-Completed:
-
-- Messaging Module Structure
-- README Organization
-- Point to Point Messaging
-- Publish Subscribe Model
-- Queue vs Topic
-- Event Driven Architecture
-- Message Delivery Guarantees
-- Retry Strategy
-- Dead Letter Queue
-- Message Ordering
-- Idempotent Consumer
-- Kafka Fundamentals
-- RabbitMQ Fundamentals
-
-Next Improvements:
-
-P1
-
-- Kafka Partition Strategy
-- Consumer Group Deep Dive
-- Retry Pattern Implementation
-- DLQ Production Strategy
-
-P2
-
-- Event Sourcing
-- CQRS Basics
-- Outbox Pattern
-- Distributed Event Architecture
-
-P3
-
-- Kafka Scaling Strategy
-- Message Observability
-- Schema Registry Discussion
-- Stream Processing Basics
-
-Production Discussions:
-
-- Consumer Scaling
-- Retry Handling
-- Distributed Communication
-- Event Streaming
-- Message Reliability
-- Observability
-
-Future Enhancements:
-
-- Kafka Internals
-- RabbitMQ Advanced Routing
-- Message Deduplication
-- Ordering Guarantees
-- Backpressure Handling
-
 ## Performance
 
-Status: Planned
+Status: Foundation Complete
 
-## Caching
+Completed:
 
-Status: Planned
+- Performance Module Structure
+- README Organization
+- Latency
+- Throughput
+- Response Time
+- JVM Performance
+- Connection Pool Optimization
+- Database Performance
+- API Performance
+- Caching Strategy
+- Load Testing
+- Performance Monitoring
+- Bottleneck Analysis
 
-## Future Goal
+Next Improvements:
 
-Build maintainable backend engineering documentation covering backend fundamentals, distributed systems, production engineering and interview preparation.
+P1
+
+- JVM GC Deep Dive
+- Heap Dump Analysis
+- Thread Dump Analysis
+- Memory Leak Troubleshooting
+
+P2
+
+- Profiling Tools
+- Async Processing Optimization
+- CPU Profiling
+- Performance Benchmarking
+
+P3
+
+- JVM Internals Performance
+- Linux Performance Analysis
+- Distributed System Performance
+- Capacity Planning
+
+Production Discussions:
+
+- Thread Pool Tuning
+- Connection Pool Sizing
+- Resource Utilization
+- Observability
+- Bottleneck Identification
+- Scalability Optimization
+
+Future Enhancements:
+
+- GC Log Analysis
+- Java Flight Recorder
+- Async Profiler
+- Performance Regression Detection
+- SLO and SLA Discussions
