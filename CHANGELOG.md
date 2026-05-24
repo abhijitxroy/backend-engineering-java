@@ -1,6 +1,40 @@
 # Changelog
 
-## v1.3.0 (Unreleased)
+## v1.4.0 (Unreleased)
+
+Release Focus: Hibernate Expansion and Backend Persistence Engineering
+
+### Added
+
+#### Hibernate and JPA Expansion
+
+- Hibernate fundamentals
+
+- Persistence Context discussions
+
+- Entity lifecycle management
+
+- Transaction management coverage
+
+- Transaction propagation examples
+
+- Caching strategies
+
+- Query techniques
+
+- Performance optimization guidance
+
+- Composite key implementation examples
+
+- Criteria API examples
+
+- Many-To-Many mapping examples
+
+- Multi database configuration examples
+
+...
+
+## v1.3.0
 
 Release Focus: Core Java Consolidation and Learning Platform Improvements
 
@@ -16,23 +50,56 @@ Release Focus: Core Java Consolidation and Learning Platform Improvements
 - Practical Java implementations
 - Backend engineering considerations
 
+#### Hibernate and JPA Expansion
+
+- Hibernate fundamentals
+- Persistence Context discussions
+- Entity lifecycle management
+- Transaction management coverage
+- Transaction propagation examples
+- Caching strategies
+- Query techniques
+- Performance optimization guidance
+- Composite key implementation examples
+- Criteria API examples
+- Many-To-Many mapping examples
+- Multi database configuration examples
+- Enterprise persistence design considerations
+- Production backend database discussions
+
+#### Backend Engineering Coverage
+
+- Distributed transaction considerations
+- Multi datasource architecture
+- Production persistence optimization
+- Query optimization discussions
+- Enterprise backend persistence patterns
+
 ### Repository Improvements
 
 - Core Java example consolidation
+- Hibernate knowledge consolidation
 - Learning structure improvements
 - Repository discoverability improvements
 - Backend engineering knowledge consolidation
+- Example organization improvements
+- Database learning path improvements
 
 ### Migration
 
 - Consolidated reusable content from core-java repository
 - Migrated practical Java examples and learning assets
+- Added Hibernate and JPA learning modules
+- Added production engineering persistence discussions
 - Improved repository organization
 
 ### Quality Improvements
 
 - Core Java migration completion
+- Hibernate consolidation completion
 - Example organization improvements
+- Improved learning progression
+- Backend engineering coverage expansion
 
 ## v1.2.0
 
