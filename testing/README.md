@@ -18,10 +18,13 @@ Coverage includes:
 - Failure Testing
 - Flaky Tests
 - Functional Testing
-- End To End Testing
+- End-to-End Testing
 - JUnit
+- JUnit Jupiter
+- JUnit Vintage
+- Spock Comparison
 - Mockito
-- TestContainers
+- Testcontainers
 - Contract Testing
 - TDD
 - BDD
@@ -39,12 +42,12 @@ Mockito discussions include:
 - Final Class Mocking
 - Static Method Mocking
 - Mock Initialization
-- Dependency Isolation
 - @Mock
 - @Spy
 - @InjectMocks
 - verify()
 - ArgumentCaptor
+- Dependency Isolation
 
 Backend engineering considerations:
 
@@ -70,6 +73,7 @@ Examples:
 - Production Quality Gates
 - Deployment Confidence
 - Backend Reliability
+- Test Maintainability
 - Test Reliability
 
 ## Repository Goal
@@ -85,6 +89,8 @@ testing/
 ├── regression-testing.md
 ├── failure-testing.md
 ├── flaky-tests.md
+├── junit/
+│   └── README.md
 └── mockito/
     ├── README.md
     └── examples/

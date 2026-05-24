@@ -390,8 +390,11 @@ Completed:
 - Unit Testing
 - Integration Testing
 - Functional Testing
-- End To End Testing
+- End-to-End Testing
 - JUnit
+- JUnit Jupiter
+- JUnit Vintage
+- Spock Comparison
 - Mockito
 - Mock vs Spy
 - Final Class Mocking
@@ -411,6 +414,9 @@ Next Improvements:
 P1
 
 - JUnit Advanced Features
+- JUnit Examples
+- Assertions Deep Dive
+- Parameterized Tests
 - Mockito Deep Dive
 - TestContainers Foundation
 - Regression Testing Automation
@@ -455,3 +461,5 @@ Future Enhancements:
 - Test Data Management Strategy
 - Flaky Test Prevention
 - Testing Stability Engineering
+- JUnit Extension Model
+- Custom Test Utilities
