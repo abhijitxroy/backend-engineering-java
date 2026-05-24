@@ -2,37 +2,69 @@
 
 ## v1.4.0 (Unreleased)
 
-Release Focus: Hibernate Expansion and Backend Persistence Engineering
+Release Focus: Hibernate Expansion, Testing Engineering Expansion and Backend Persistence Engineering
 
 ### Added
 
 #### Hibernate and JPA Expansion
 
 - Hibernate fundamentals
-
 - Persistence Context discussions
-
 - Entity lifecycle management
-
 - Transaction management coverage
-
 - Transaction propagation examples
-
 - Caching strategies
-
 - Query techniques
-
 - Performance optimization guidance
-
 - Composite key implementation examples
-
 - Criteria API examples
-
 - Many-To-Many mapping examples
-
 - Multi database configuration examples
 
-...
+#### Testing Engineering Expansion
+
+- Mockito module
+- Mock vs Spy discussions
+- Final class mocking
+- Static method mocking
+- Mock initialization patterns
+- Regression testing discussions
+- Failure testing discussions
+- Flaky test engineering discussions
+- Backend testing engineering coverage
+- Test reliability discussions
+- CI stability considerations
+- Production quality discussions
+
+Testing Coverage:
+
+- Testing Pyramid
+- AAA Pattern
+- Test Isolation
+- Contract Testing
+- API Testing
+- Performance Testing
+
+Production Engineering Coverage:
+
+- Deployment confidence
+- Reliability validation
+- Failure handling validation
+- Backend testing architecture
+
+### Repository Improvements
+
+- Testing module expansion
+- Testing knowledge consolidation
+- Repository structure improvements
+- Backend engineering coverage expansion
+
+### Quality Improvements
+
+- Testing engineering foundation expansion
+- Backend reliability discussion coverage
+- CI reliability coverage improvements
+- Production engineering alignment improvements
 
 ## v1.3.0
 

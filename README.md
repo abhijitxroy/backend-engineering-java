@@ -1,6 +1,6 @@
 # Backend Engineering Java
 
-Backend engineering concepts organized across Java ecosystem technologies, persistence engineering, software engineering fundamentals and distributed application patterns.
+Backend engineering concepts organized across Java ecosystem technologies, persistence engineering, testing engineering, software engineering fundamentals and distributed application patterns.
 
 ## Repository Structure
 
@@ -20,6 +20,12 @@ api-design/
 testing/
 caching/
 messaging/
+
+testing/
+├── mockito/
+├── regression-testing.md
+├── failure-testing.md
+└── flaky-tests.md
 
 microservices/
 performance/
@@ -52,15 +58,16 @@ todo.md
 - Caching
 - Messaging
 - Security
-- Persistence Engineering
+- Testing Engineering
+- Reliability Engineering
 
 ### Software Engineering
 
 - Design Patterns
-- Testing
+- Testing and Quality Engineering
 - Performance
 - Microservices
 
 ## Repository Goal
 
-Organize backend engineering concepts in a maintainable and scalable structure for long term engineering reference, interview preparation, backend engineering knowledge consolidation and continuous learning.
+Organize backend engineering concepts in a maintainable and scalable structure for long term engineering reference, interview preparation, backend engineering knowledge consolidation, production engineering discussions and continuous learning.

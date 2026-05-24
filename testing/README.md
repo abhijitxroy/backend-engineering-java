@@ -14,6 +14,9 @@ Coverage includes:
 
 - Unit Testing
 - Integration Testing
+- Regression Testing
+- Failure Testing
+- Flaky Tests
 - Functional Testing
 - End To End Testing
 - JUnit
@@ -24,7 +27,32 @@ Coverage includes:
 - BDD
 - Performance Testing
 - API Testing
-- Test Pyramid
+- Testing Pyramid
+- Test Isolation
+- AAA Pattern
+
+### Mockito Coverage
+
+Mockito discussions include:
+
+- Mock vs Spy
+- Final Class Mocking
+- Static Method Mocking
+- Mock Initialization
+- Dependency Isolation
+- @Mock
+- @Spy
+- @InjectMocks
+- verify()
+- ArgumentCaptor
+
+Backend engineering considerations:
+
+- Faster CI execution
+- Reliable unit testing
+- Service layer testing
+- Repository layer testing
+- Dependency isolation
 
 ### Production Engineering Perspective
 
@@ -33,12 +61,16 @@ Testing discussions for scalable backend systems and production architecture con
 Examples:
 
 - CI Testing Pipeline
+- CI Stability
 - Test Automation
 - Regression Testing
 - Load Testing
 - Reliability Validation
 - Failure Testing
 - Production Quality Gates
+- Deployment Confidence
+- Backend Reliability
+- Test Reliability
 
 ## Repository Goal
 
@@ -49,5 +81,11 @@ Organize backend testing engineering concepts in a maintainable structure coveri
 ```text
 testing/
 ├── README.md
-└── testing-overview.md
+├── testing-overview.md
+├── regression-testing.md
+├── failure-testing.md
+├── flaky-tests.md
+└── mockito/
+    ├── README.md
+    └── examples/
 ```

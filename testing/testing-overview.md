@@ -1,5 +1,3 @@
-
-
 # Testing Overview
 
 Backend testing ensures application reliability, maintainability and production stability.
@@ -19,6 +17,8 @@ Recommendation:
 - More Unit Tests
 - Moderate Integration Tests
 - Fewer End To End Tests
+
+Testing Pyramid helps reduce execution cost while improving deployment confidence.
 
 ## Unit Testing
 
@@ -59,9 +59,9 @@ Focus areas:
 - Business Flow Validation
 - Feature Verification
 
-## End To End Testing
+## End-to-End Testing
 
-End to End testing validates complete application workflows.
+End-to-End testing validates complete application workflows.
 
 Examples:
 
@@ -79,6 +79,13 @@ Capabilities:
 - Test Lifecycle
 - Parameterized Tests
 
+Backend engineering usage:
+
+- Unit testing business logic
+- Validation testing
+- Service layer testing
+- Utility testing
+
 ## Mockito
 
 Mockito simplifies mocking dependencies.
@@ -89,19 +96,36 @@ Common features:
 - Stub Behavior
 - Interaction Verification
 
-## TestContainers
+Additional capabilities:
 
-TestContainers provides disposable containers for integration testing.
+- Final Class Mocking
+- Static Method Mocking
+- Spy vs Mock
+- Dependency Isolation
+- Mock Initialization
+
+Backend engineering usage:
+
+- Faster CI execution
+- Repository layer testing
+- Service layer isolation
+- Reliable unit testing
+- Dependency isolation
+
+## Testcontainers
+
+Testcontainers provides lightweight disposable containers for integration and backend infrastructure testing.
 
 Examples:
 
 - PostgreSQL Container
 - Redis Container
 - Kafka Container
+- MySQL Container
 
 Benefits:
 
-- Production like testing environment
+- Production-like testing environment
 - Better test reliability
 
 ## Contract Testing
@@ -111,6 +135,12 @@ Contract testing validates service communication compatibility.
 Examples:
 
 - Consumer Driven Contract Testing
+
+Benefits:
+
+- Prevent integration breakage
+- Improve service compatibility
+- Safer microservice deployments
 
 ## TDD
 
@@ -144,6 +174,12 @@ API validation areas:
 - Error Handling
 - Authentication
 
+Common tools:
+
+- Postman
+- Rest Assured
+- Mock Server
+
 ## Performance Testing
 
 Performance validation examples:
@@ -153,6 +189,42 @@ Performance validation examples:
 - Spike Testing
 - Endurance Testing
 
+## AAA Pattern
+
+Arrange
+
+Prepare test data and dependencies.
+
+Act
+
+Execute business behavior.
+
+Assert
+
+Validate expected result.
+
+Backend engineering perspective:
+
+- Better readability
+- Better maintainability
+- Cleaner unit tests
+
+## Test Isolation
+
+Tests should execute independently.
+
+Avoid:
+
+- Shared mutable state
+- External dependency coupling
+- Environment dependency
+
+Benefits:
+
+- Stable CI pipeline
+- Reliable execution
+- Lower flaky test probability
+
 ## Production Engineering Discussions
 
 Backend discussions commonly include:
@@ -161,8 +233,11 @@ Backend discussions commonly include:
 - Regression Testing
 - Reliability Validation
 - Failure Testing
+- Deployment Confidence
+- CI Stability
+- Test Reliability
 - Production Quality Gates
 
 ## Notes
 
-Testing strategy directly influences backend reliability, software quality and production engineering excellence.
+Testing strategy directly influences backend reliability, software quality, deployment confidence, maintainability and production engineering maturity.

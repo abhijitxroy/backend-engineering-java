@@ -57,7 +57,7 @@ Future Enhancements:
 - Async Profiler
 - Performance Regression Detection
 - SLO and SLA Discussions
-
+- Golden Signals Monitoring
 
 ## Caching
 
@@ -150,6 +150,8 @@ P1
 - One To Many Mapping
 - Advanced JPQL
 - EntityGraph Deep Dive
+- Native Query Optimization
+- Pagination Deep Dive
 
 P2
 
@@ -201,20 +203,20 @@ Completed:
 - Java Memory Concepts
 - JVM Fundamentals
 - Garbage Collection Fundamentals
- - SOLID Principles
- - Functional Interfaces
- - Stream API
- - Optional
- - Comparator
+- SOLID Principles
+- Functional Interfaces
+- Stream API
+- Optional
+- Comparator
 
 Next Improvements:
 
 P1
 
 - Java Generics Deep Dive
-- Stream API
-- Functional Interfaces
-- Lambda Expressions
+- Lambda Expressions Deep Dive
+- Exception Handling Deep Dive
+- Java IO and NIO
 
 P2
 
@@ -246,189 +248,9 @@ Future Enhancements:
 - Lock Framework
 - VarHandle
 - Structured Concurrency
- - Pattern Matching
- - Record Classes
- - Sealed Classes
-
-## Collections
-
-Status: Foundation Complete
-
-Completed:
-
-- Collections Module Structure
-- README Organization
-- Collection Hierarchy
-- List
-- Set
-- Map
-- Queue
-- Concurrent Collections
-- Collection Selection Strategy
-- Time Complexity Discussions
-- Production Engineering Discussions
-
-Next Improvements:
-
-P1
-
-- ArrayList Internal Working
-- HashMap Internal Working
-- ConcurrentHashMap Deep Dive
-- Comparable vs Comparator
-
-P2
-
-- CopyOnWrite Collections
-- BlockingQueue Deep Dive
-- Collection Synchronization
-- Iterator Internals
-
-P3
-
-- Collection Memory Optimization
-- Concurrent Collection Performance
-- Collection Benchmarking
-- JVM Collection Optimization
-
-Production Discussions:
-
-- Thread Safety
-- Concurrency Design
-- Collection Selection Strategy
-- Performance Optimization
-- Memory Efficiency
-- Backend Scalability
-
-Future Enhancements:
-
-- Fail Fast vs Fail Safe Iterator
-- Hash Collision Discussion
-- Treeify Threshold
-- Spliterator
-- Concurrent Collection Internals
-
-## JVM
-
-Status: Foundation Complete
-
-Completed:
-
-- JVM Module Structure
-- README Organization
-- JVM Architecture
-- Class Loader Subsystem
-- JVM Memory Areas
-- Heap Memory
-- Stack Memory
-- Metaspace
-- Native Memory
-- Execution Engine
-- JIT Compilation
-- Garbage Collection Fundamentals
-- JVM Monitoring
-- Heap Dump and Thread Dump
-
-Next Improvements:
-
-P1
-
-- GC Algorithm Deep Dive
-- G1GC Internals
-- ZGC Internals
-- Heap Sizing Strategy
-
-P2
-
-- JVM Class Loading Internals
-- Escape Analysis
-- JVM Monitoring Tools Deep Dive
-- JVM Startup Optimization
-
-P3
-
-- GC Log Analysis
-- JVM Benchmarking
-- Low Latency JVM Tuning
-- Production JVM Capacity Planning
-
-Production Discussions:
-
-- Heap Tuning
-- GC Tuning
-- Memory Leak Analysis
-- Resource Utilization
-- JVM Performance Optimization
-- Backend Scalability
-
-Future Enhancements:
-
-- Java Flight Recorder
-- JMC Deep Dive
-- Native Memory Tracking
-- Safepoint Discussion
-- JVM Internals Performance Analysis
-
-## Multithreading
-
-Status: Foundation Complete
-
-Completed:
-
-- Multithreading Module Structure
-- README Organization
-- Thread Lifecycle
-- Thread Creation
-- Runnable Interface
-- Callable Interface
-- Synchronization
-- Race Condition
-- Deadlock
-- Locks
-- Executor Framework
-- Thread Pool
-- CompletableFuture
-- Concurrent Utilities
-
-Next Improvements:
-
-P1
-
-- ThreadLocal Deep Dive
-- ExecutorService Internals
-- CompletableFuture Chaining
-- Producer Consumer Pattern
-
-P2
-
-- ForkJoin Framework
-- Virtual Threads
-- Thread Dump Analysis
-- Concurrency Debugging
-
-P3
-
-- Lock Optimization
-- High Throughput Concurrency Design
-- Parallel Processing Benchmarking
-- Concurrency Performance Tuning
-
-Production Discussions:
-
-- Thread Safety
-- Resource Contention
-- CPU Utilization
-- Concurrency Design
-- Throughput Optimization
-- Backend Scalability
-
-Future Enhancements:
-
-- Phaser
-- StampedLock
-- Atomic Classes
-- LongAdder
-- Structured Concurrency
+- Pattern Matching
+- Record Classes
+- Sealed Classes
 
 ## Microservices
 
@@ -460,6 +282,7 @@ P1
 - Distributed Transaction Deep Dive
 - API Gateway Internals
 - Retry and Resilience Patterns
+- Bulkhead Pattern
 
 P2
 
@@ -522,6 +345,7 @@ P1
 - OAuth2 Authorization Flow
 - Refresh Token Strategy
 - API Gateway Security
+- Rate Limiting Strategy
 
 P2
 
@@ -546,13 +370,13 @@ Production Discussions:
 - Security Hardening
 - Secure API Design
 
- Future Enhancements:
+Future Enhancements:
 
- - OpenID Connect
- - WebAuthn
- - Token Introspection
- - Vault Deep Dive
- - Production Security Incident Patterns
+- OpenID Connect
+- WebAuthn
+- Token Introspection
+- Vault Deep Dive
+- Production Security Incident Patterns
 
 ## Testing
 
@@ -569,7 +393,13 @@ Completed:
 - End To End Testing
 - JUnit
 - Mockito
-- TestContainers
+- Mock vs Spy
+- Final Class Mocking
+- Static Method Mocking
+- Mock Initialization
+- Regression Testing
+- Failure Testing
+- Flaky Tests
 - Contract Testing
 - TDD
 - BDD
@@ -582,7 +412,8 @@ P1
 
 - JUnit Advanced Features
 - Mockito Deep Dive
-- TestContainers Advanced Usage
+- TestContainers Foundation
+- Regression Testing Automation
 - API Contract Testing
 
 P2
@@ -591,6 +422,8 @@ P2
 - Chaos Testing
 - Mutation Testing
 - Parallel Test Execution
+- TestContainers Advanced Usage
+- Failure Injection Testing
 
 P3
 
@@ -605,6 +438,9 @@ Production Discussions:
 - Regression Testing
 - Reliability Validation
 - Failure Testing
+- Deployment Confidence
+- CI Stability
+- Test Reliability
 - Production Quality Gates
 - Test Automation Strategy
 
@@ -615,3 +451,7 @@ Future Enhancements:
 - Synthetic Monitoring
 - Canary Validation
 - Production Incident Validation
+- Testing Observability
+- Test Data Management Strategy
+- Flaky Test Prevention
+- Testing Stability Engineering
