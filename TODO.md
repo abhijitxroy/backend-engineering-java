@@ -114,22 +114,6 @@ P3
 - Webhook Design
 - API Observability
 
-P2
-
-- Request Validation
-- Error Handling Strategy
-- API Documentation
-- OpenAPI Specification
-- Swagger Integration
-
-P3
-
-- Rate Limiting
-- API Gateway Patterns
-- Authentication Patterns
-- JWT Integration
-- API Security Best Practices
-
 Production Discussions:
 
 - Backward Compatibility
@@ -139,6 +123,18 @@ Production Discussions:
 - Timeout Handling
 - Correlation ID
 - Traceability
+- API Security
+- Rate Limiting
+
+Future Enhancements:
+
+- GraphQL Fundamentals
+- gRPC Basics
+- API Deprecation Strategy
+- API Contract Testing
+- Consumer Driven Contracts
+- API Monitoring
+- API Analytics
 
 ## Messaging
 
