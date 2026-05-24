@@ -2,7 +2,7 @@
 
 ## v1.4.0 (Unreleased)
 
-Release Focus: Hibernate Expansion, Testing Engineering Expansion and Backend Persistence Engineering
+Release Focus: Hibernate Expansion, Testing Engineering Expansion, Messaging Engineering Expansion and Backend Persistence Engineering
 
 ### Added
 
@@ -52,12 +52,62 @@ Production Engineering Coverage:
 - Failure handling validation
 - Backend testing architecture
 
+#### Messaging Engineering Expansion
+
+Added:
+
+- Kafka foundation
+- Producer discussions
+- Consumer discussions
+- Consumer Group coverage
+- Offset management discussions
+- Replication factor discussions
+- Fault tolerance discussions
+- ACK and ISR coverage
+- Retry handling discussions
+- Duplicate message handling
+- Idempotent consumer discussions
+- Dead Letter Queue discussions
+- Kafka Connect coverage
+- Event Driven Architecture discussions
+- Producer tuning considerations
+- Consumer tuning considerations
+- Message ordering discussions
+- Kafka ELK integration discussions
+- Assign and Seek coverage
+- Message acknowledgement validation
+- Delivery confirmation strategy
+
+Production Engineering Coverage:
+
+- Throughput optimization
+- Reliability engineering
+- Offset troubleshooting
+- Consumer scaling
+- Event streaming reliability
+- Duplicate prevention discussions
+- Delivery reliability discussions
+- Message acknowledgement considerations
+
+Examples Added:
+
+- Producer example
+- Consumer example
+- Dead Letter Queue example
+- Consumer Group example
+- Offset Management example
+- Idempotent Consumer example
+- Kafka delivery confirmation discussions
+
 ### Repository Improvements
 
 - Testing module expansion
 - Testing knowledge consolidation
 - Repository structure improvements
 - Backend engineering coverage expansion
+- Messaging engineering coverage expansion
+- Kafka knowledge consolidation
+- Messaging learning path improvements
 
 ### Quality Improvements
 
@@ -65,6 +115,10 @@ Production Engineering Coverage:
 - Backend reliability discussion coverage
 - CI reliability coverage improvements
 - Production engineering alignment improvements
+- Event streaming engineering coverage
+- Reliability engineering discussions expansion
+- Messaging reliability coverage improvements
+- Kafka backend engineering coverage expansion
 
 ## v1.3.0
 
