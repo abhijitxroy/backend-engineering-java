@@ -1,5 +1,92 @@
 # Changelog
 
+## v1.5.0 (Unreleased)
+
+Release Focus: Repository Evolution, Multi Language Backend Engineering Foundation and Repository Architecture Consolidation
+
+### Added
+
+#### Languages Engineering Expansion
+
+Added:
+
+- Python fundamentals module
+- Python data type discussions
+- Python identifier discussions
+- Python beginner projects
+- Python pattern problem discussions
+- Multi language backend engineering foundation
+- Language engineering module structure
+- Java and Python learning ownership alignment
+
+Python Coverage:
+
+- Calculator project
+- Number guesser project
+- Quiz game project
+- Rock paper scissors project
+- Square patterns
+- Triangle patterns
+- Pyramid patterns
+- Alphabet patterns
+- Problem solving discussions
+
+#### Java Engineering Consolidation
+
+Added:
+
+- JVM ownership consolidation
+- Comparator ownership consolidation
+- Stream ownership cleanup
+- JDK8 learning path improvements
+- Functional programming organization improvements
+- Collection processing ownership alignment
+
+Examples Coverage:
+
+- Stream processing examples
+- Functional interface examples
+- Comparator discussions
+- Employee stream examples
+- Collection transformation examples
+
+### Repository Architecture Improvements
+
+Added:
+
+- Repository rename from backend-engineering-java to backend-engineering
+- Languages module introduction
+- Java migration to languages ownership
+- Python migration to languages ownership
+- JVM migration under Java ownership
+- Repository structure consolidation
+- Cross language backend engineering structure
+- Knowledge ownership standardization
+
+Architecture Improvements:
+
+- Multi language learning structure
+- Backend engineering scalability improvements
+- Repository ownership simplification
+- Learning path organization improvements
+- Repository navigation improvements
+
+### Migration
+
+- Migrated standalone Python repository
+- Consolidated Python learning assets
+- Consolidated Java ownership model
+- Migrated JVM ownership into Java module
+- Repository structure modernization
+
+### Quality Improvements
+
+- Repository consistency improvements
+- Learning structure improvements
+- Naming standardization improvements
+- Module ownership improvements
+- Documentation alignment improvements
+
 ## v1.4.0 (Unreleased)
 
 Release Focus: Hibernate Expansion, Testing Engineering Expansion, Messaging Engineering Expansion, Database Engineering Expansion and Backend Persistence Engineering
