@@ -1,22 +1,21 @@
-# Backend Engineering Java
+# Backend Engineering
 
-Backend engineering learning repository covering production engineering concepts, backend architecture discussions, Java engineering foundations and interview preparation topics.
+Backend engineering learning repository covering backend architecture, production engineering concepts, language engineering foundations, distributed systems and interview preparation topics.
 
 ## Repository Coverage
 
 Modules:
 
-- Core Java
+- Languages Engineering
 - Database Engineering
 - Spring Ecosystem
 - Messaging Engineering
 - Design Patterns
-- JVM Engineering
 - Microservices
-- Testing Engineering
 - API Design
 - Security
 - Performance Engineering
+- Testing Engineering
 - Multithreading
 - Collections
 - Caching
@@ -28,7 +27,9 @@ Coverage Areas:
 - Backend Reliability
 - Distributed Systems
 - Database Engineering
-- Kafka and Event Streaming
+- Language Engineering
+- Java Engineering
+- Python Engineering
 - JDK8 Engineering
 - Functional Programming
 - Backend Testing
@@ -43,17 +44,15 @@ Coverage Areas:
 - Design Patterns
 - Collection Processing
 - Caching Strategies
+- Kafka and Event Streaming
 
 ## Repository Structure
 
 ```text
-backend-engineering-java/
+backend-engineering/
 ├── api-design/
 ├── caching/
 ├── collections/
-├── core-java/
-│   ├── examples/
-│   └── jdk8/
 ├── database/
 │   ├── connection-pool/
 │   ├── distributed-database/
@@ -66,7 +65,11 @@ backend-engineering-java/
 │   ├── behavioral/
 │   ├── creational/
 │   └── structural/
-├── jvm/
+├── languages/
+│   ├── java/
+│   │   ├── jdk8/
+│   │   └── jvm/
+│   └── python/
 ├── messaging/
 │   └── kafka/
 ├── microservices/
@@ -146,14 +149,6 @@ Coverage:
 - Distributed Communication
 - Scalability Discussions
 
-## JVM Engineering
-
-Coverage:
-
-- JVM Fundamentals
-- Memory Model
-- Performance Discussions
-
 ## API Design
 
 Coverage:
@@ -199,13 +194,16 @@ Coverage:
 - Backend Caching Patterns
 - Performance Optimization
 
-## Core Java
+## Languages Engineering
 
-Backend engineering core Java concepts covering Java fundamentals, production coding standards and JDK8 engineering practices.
+Language engineering concepts covering Java foundations, Python foundations, JDK8 engineering practices and backend programming concepts.
 
 Coverage:
 
 - Java Fundamentals
+- Python Fundamentals
+- JDK8 Engineering
+- JVM Fundamentals
 - Object Oriented Programming
 - SOLID Principles
 - Functional Programming
@@ -214,11 +212,11 @@ Coverage:
 - Stream API
 - Optional API
 - Parallel Stream
-- Collection Transformation
 - Collection Processing
 - Comparator Discussions
-- Stream Problem Solving
-- Backend Collection Patterns
+- Problem Solving
+- Pattern Programs
+- Backend Coding Practices
 
 Examples:
 
@@ -234,6 +232,11 @@ Examples:
 - FlatMap Transformation
 - Parallel Stream Processing
 - Employee Stream Problems
+- Python Pattern Problems
+- Calculator Project
+- Number Guesser Project
+- Quiz Game
+- Rock Paper Scissors Project
 
 ## Testing
 
