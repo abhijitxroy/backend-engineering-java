@@ -117,6 +117,21 @@ Added:
 - Sharding discussions
 - Transaction engineering discussions
 
+Additional Coverage:
+
+- SQL JOIN discussion expansion
+- UNION operator considerations
+- Aggregate function discussions
+- Query optimization discussions
+- Text to date conversion examples
+- Database connection sizing discussions
+- Hibernate update vs merge coverage
+- Hibernate vs JDBC discussion
+- Multiple SessionFactory discussion
+- Partition vs Group discussion
+- Replication vs Sharding comparison
+- Shard key optimization discussion
+
 Production Engineering Coverage:
 
 - Connection optimization
@@ -125,6 +140,9 @@ Production Engineering Coverage:
 - Data consistency validation
 - Query execution validation
 - Connection leak troubleshooting
+- Database connection sizing optimization
+- Query bottleneck discussions
+- Query execution optimization
 
 Examples Added:
 
