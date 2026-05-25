@@ -304,6 +304,32 @@ P1
 - Python Iterators and Generators
 - Python Async Programming
 - Python Performance Discussions
+- Java Collections Deep Dive
+- ArrayList Deep Dive
+- LinkedList Deep Dive
+- Vector Discussion
+- Stack Discussion
+- CopyOnWriteArrayList Discussion
+- HashSet Deep Dive
+- LinkedHashSet Discussion
+- TreeSet Discussion
+- CopyOnWriteArraySet Discussion
+- HashMap Internals
+- LinkedHashMap Discussion
+- TreeMap Discussion
+- Hashtable Discussion
+- ConcurrentHashMap Deep Dive
+- WeakHashMap Discussion
+- PriorityQueue Discussion
+- BlockingQueue Discussion
+- ArrayDeque Discussion
+- ConcurrentLinkedQueue Discussion
+- ArrayList vs LinkedList
+- HashMap vs ConcurrentHashMap
+- HashSet vs TreeSet
+- HashMap vs Hashtable
+- Vector vs ArrayList
+- Collections Example Programs
 
 P2
 
@@ -412,6 +438,10 @@ Future Enhancements:
 - OpenTelemetry Advanced Usage
 - Distributed Cache Strategy
 - Production Incident Patterns
+- Java Collections Performance Benchmarking
+- Collection Memory Optimization
+- Concurrent Collection Patterns
+- Collection Internal Architecture Deep Dive
 
 ## Security
 
