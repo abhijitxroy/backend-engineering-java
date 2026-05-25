@@ -1,16 +1,14 @@
-
-
 # Python
 
-Python learning module covering programming fundamentals, beginner projects and pattern problem solving.
+Python learning module covering programming fundamentals, backend foundations, testing concepts, beginner projects and pattern problem solving.
 
 ## Coverage
 
 Topics:
 
 - Python Fundamentals
-- Data Types
-- Identifiers and Keywords
+- Backend Foundations
+- Testing
 - Beginner Python Projects
 - Pattern Programs
 - Problem Solving
@@ -20,16 +18,54 @@ Topics:
 ```text
 python/
 ├── README.md
+├── backend-foundations/
+│   ├── api-client/
+│   ├── config-management/
+│   ├── database/
+│   ├── json-processing/
+│   ├── logging/
+│   ├── requests/
+│   ├── serialization/
+│   └── threading/
 ├── basic-projects/
 │   ├── calculator/
 │   ├── number-guesser/
 │   ├── quiz-game/
 │   └── rock-paper-scissors/
 ├── fundamentals/
+│   ├── collections/
+│   ├── control-flow/
 │   ├── data-types/
-│   └── identifiers/
-└── pattern-programs/
+│   ├── exception-handling/
+│   ├── file-handling/
+│   ├── functions/
+│   ├── identifiers/
+│   ├── oop/
+│   ├── operators/
+│   └── variables/
+├── pattern-programs/
+│   ├── pyramid/
+│   ├── square/
+│   └── triangle/
+└── testing/
+    ├── integration/
+    ├── mocking/
+    ├── pytest/
+    └── unittest/
 ```
+
+## Backend Foundations
+
+Coverage:
+
+- API Client
+- Configuration Management
+- Database Integration
+- JSON Processing
+- Logging
+- Requests Library
+- Serialization
+- Threading
 
 ## Beginner Projects
 
@@ -44,10 +80,23 @@ Coverage:
 
 Coverage:
 
-- Data Types
 - Variables
-- Keywords
-- Identifiers
+- Operators
+- Functions
+- Collections
+- Object Oriented Programming
+- File Handling
+- Exception Handling
+- Control Flow
+
+## Testing
+
+Coverage:
+
+- unittest
+- pytest
+- Mocking
+- Integration Testing
 
 ## Pattern Programs
 
@@ -61,8 +110,9 @@ Coverage:
 
 ## Learning Focus
 
-- Programming Basics
-- Python Syntax
-- Logical Thinking
+- Python Programming Foundation
+- Backend Development Basics
+- Testing Fundamentals
 - Problem Solving
 - Coding Practice
+- Backend Engineering Skills
