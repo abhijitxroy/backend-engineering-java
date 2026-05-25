@@ -83,6 +83,21 @@ Examples:
 - MAX()
 - MIN()
 
+COUNT():
+- Counts records
+
+SUM():
+- Calculates total value
+
+AVG():
+- Calculates average
+
+MAX():
+- Returns highest value
+
+MIN():
+- Returns lowest value
+
 ## CASE Statement
 
 Example:
@@ -116,6 +131,18 @@ Coverage:
 - SELF JOIN
 - CROSS JOIN
 
+INNER JOIN:
+- Returns matching records from both tables
+
+LEFT JOIN:
+- Returns all left table records and matching right table records
+
+RIGHT JOIN:
+- Returns all right table records and matching left table records
+
+FULL JOIN:
+- Returns matching and non matching records from both tables
+
 ## UNION vs UNION ALL
 
 UNION:
@@ -126,6 +153,11 @@ UNION ALL:
 
 - Keeps duplicates
 - Better performance
+
+UNION considerations:
+- Column count should match
+- Data types should be compatible
+- Column order should align
 
 ## Window Functions
 
@@ -309,6 +341,17 @@ Database Backup Examples:
 - Dump Restore
 - One Database To Another Database Backup
 
+## Text To Date Conversion
+
+MySQL:
+
+```sql
+SELECT DATE_FORMAT(
+'31-01-2021',
+'%d-%m-%Y'
+) AS date_value;
+```
+
 ## Yesterday Date Example
 
 MySQL:
@@ -323,6 +366,16 @@ INTERVAL 1 DAY
 ## Function Restriction Discussion
 
 Function may not be usable from SELECT when operation performs transactional modification depending on database implementation.
+
+## SQL Query Optimization Steps
+
+Approaches:
+
+- Use indexes properly
+- Avoid SELECT *
+- Validate execution plan
+- Optimize JOIN operations
+- Reduce unnecessary scans
 
 ## SQL Performance Discussions
 

@@ -137,6 +137,31 @@ Too large pool:
 - Database overload
 - Memory pressure
 
+## Database Connection Count
+
+How many database connections application can create depends on:
+
+- Connection pool size
+- Database capacity
+- CPU resources
+- Application throughput
+- Query execution latency
+
+Example:
+
+```properties
+maximumPoolSize=20
+```
+
+Production considerations:
+
+- Resource utilization
+- Concurrent request handling
+- Database connection limits
+- Backend throughput optimization
+
+Connection count sizing should balance throughput and database stability.
+
 ## Common Configuration
 
 Examples:
@@ -230,6 +255,8 @@ Examples:
 - Query execution time
 - Thread pool size
 - Database CPU utilization
+- Database connection limits
+- Concurrent request optimization
 
 ## Production Engineering Discussions
 

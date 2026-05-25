@@ -53,6 +53,7 @@ Hibernate is one of the most widely used JPA implementations.
 - DetachedCriteria
 - save() vs saveOrUpdate()
 - get() vs load()
+- update() vs merge()
 
 ### Performance Optimization
 
@@ -72,6 +73,8 @@ Hibernate is one of the most widely used JPA implementations.
 - API optimization
 - Scalability improvements
 - Distributed systems considerations
+- Hibernate vs JDBC considerations
+- Multiple SessionFactory design considerations
 
 ## Module Structure
 
@@ -109,7 +112,10 @@ Common interview topics:
 - First Level vs Second Level Cache
 - get() vs load()
 - save() vs saveOrUpdate()
+- update() vs merge()
 - Session vs SessionFactory
+- Hibernate vs JDBC
+- Multiple SessionFactory discussion
 - HQL
 - Restrictions vs DetachedCriteria
 - EntityManagerFactory
@@ -121,6 +127,51 @@ Common interview topics:
 - Transaction propagation
 - Isolation levels
 - Distributed transactions
+
+## Additional Engineering Discussions
+
+### Hibernate update() vs merge()
+
+update():
+
+- Reattaches detached object
+- Assumes entity exists
+- Fails when same identifier already exists in session
+
+merge():
+
+- Copies detached state into managed entity
+- Safer detached entity synchronization
+- Returns managed object
+
+### Hibernate vs JDBC
+
+Hibernate:
+
+- ORM framework
+- Automatic mapping
+- Reduced boilerplate
+- Cache support
+
+JDBC:
+
+- Low level API
+- Manual SQL
+- Manual mapping
+- Fine grained control
+
+### Multiple SessionFactory Discussion
+
+Supported use cases:
+
+- Multiple databases
+- Multi tenant systems
+- Database segregation
+
+Production consideration:
+
+- SessionFactory creation is expensive
+- Reuse SessionFactory instances where possible
 
 ## Backend Engineering Goal
 
