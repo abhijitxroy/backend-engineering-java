@@ -6,6 +6,21 @@ Propagation controls transaction boundaries and transaction participation.
 
 Understanding propagation is important for enterprise backend systems, microservices, and production transaction management.
 
+## Why Transaction Propagation Matters
+
+Transaction propagation controls how transactional operations interact when multiple service methods participate in the same business workflow.
+
+Common examples:
+
+- Order processing
+- Payment workflows
+- Inventory management
+- Audit logging
+- Notification processing
+- Financial transactions
+
+Correct propagation configuration is critical for consistency, reliability, and failure handling.
+
 ## Transaction Propagation Types
 
 Spring provides multiple propagation strategies:
@@ -17,6 +32,18 @@ Spring provides multiple propagation strategies:
 - NOT_SUPPORTED
 - NEVER
 - NESTED
+
+## Choosing the Right Propagation
+
+| Propagation | Existing Transaction Present | Creates New Transaction |
+| ----------- | ---------------------------- | ----------------------- |
+| REQUIRED | Joins existing | If needed |
+| REQUIRES_NEW | Suspends existing | Always |
+| SUPPORTS | Uses existing | No |
+| MANDATORY | Requires existing | No |
+| NOT_SUPPORTED | Suspends existing | No |
+| NEVER | Fails if present | No |
+| NESTED | Uses savepoints | Nested scope |
 
 ## REQUIRED (Default)
 
@@ -89,6 +116,13 @@ Backend engineering benefit:
 - Independent commit
 - Failure isolation
 
+Common production use cases:
+
+- Audit records
+- Compliance logging
+- Notification tracking
+- Workflow history
+
 ## SUPPORTS
 
 Uses existing transaction if available.
@@ -108,6 +142,12 @@ Enterprise usage:
 
 - Read operations
 - Reporting APIs
+
+Typical scenarios:
+
+- Read-only services
+- Reporting operations
+- Optional transactional participation
 
 ## MANDATORY
 
@@ -199,6 +239,10 @@ Audit rollback
 Inventory remains committed
 ```
 
+Important note:
+
+NESTED support depends on the underlying transaction manager and database capabilities.
+
 ## Enterprise Backend Example
 
 Scenario:
@@ -230,24 +274,53 @@ Reason:
 
 Audit logs should persist independently.
 
-## Backend Engineering Perspective
+## Common Propagation Mistakes
 
-Transaction propagation knowledge helps:
+Common problems:
+
+- Overusing REQUIRES_NEW
+- Large transaction boundaries
+- Long-running transactions
+- Unexpected rollback behavior
+- Hidden transactional dependencies
+
+These issues can cause performance problems and operational complexity.
+
+## Production Engineering Perspective
+
+Transaction propagation knowledge helps with:
 
 - Production troubleshooting
-- Transaction consistency
 - Failure recovery
-- Distributed workflow handling
-- Enterprise backend reliability
+- Consistency management
+- Service orchestration
+- Database reliability
+- Operational debugging
+- Workflow design
+- Enterprise backend architecture
 
-## Interview Focus Areas
+Engineers must understand both transactional behavior and rollback implications.
 
-Common discussions:
+## Interview Questions
 
-- REQUIRED vs REQUIRES_NEW
-- SUPPORTS
-- MANDATORY
-- NOT_SUPPORTED
-- NESTED
-- Transaction boundary handling
-- Independent transaction management
+1. What is transaction propagation?
+2. REQUIRED vs REQUIRES_NEW?
+3. When should REQUIRES_NEW be used?
+4. What happens when REQUIRED joins an existing transaction?
+5. What is the purpose of SUPPORTS?
+6. What does MANDATORY enforce?
+7. When should NOT_SUPPORTED be used?
+8. How does NESTED differ from REQUIRES_NEW?
+9. What causes unexpected rollback behavior?
+10. How would you troubleshoot transaction failures in production?
+
+## Quick Revision
+
+- REQUIRED is the default propagation mode.
+- REQUIRES_NEW creates an independent transaction.
+- SUPPORTS participates only when a transaction exists.
+- MANDATORY requires an existing transaction.
+- NOT_SUPPORTED executes outside transactions.
+- NEVER fails when a transaction exists.
+- NESTED uses savepoints.
+- Transaction boundaries directly affect consistency and reliability.

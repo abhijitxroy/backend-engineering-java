@@ -1,46 +1,99 @@
 # Spring Ecosystem
 
-Spring related backend engineering concepts and implementation patterns.
+Spring related backend engineering concepts, framework internals, operational behavior, and implementation patterns organized for scalable application development and production engineering scenarios.
 
-## Areas
+Production Spring applications become significantly more complex when moving from local development environments into large-scale backend ecosystems.
 
-### Spring Core
+Spring engineering does not operate independently from:
 
-Dependency Injection, Bean lifecycle and framework fundamentals.
+- APIs
+- databases
+- messaging systems
+- caching platforms
+- observability systems
+- deployment workflows
+- reliability engineering practices
+- operational debugging workflows
 
-### Spring Boot
-
-Auto configuration, starter ecosystem and production application concepts.
-
-### Spring Cloud
-
-Microservice patterns and distributed system integrations.
-
-### Spring Security
-
-Authentication, authorization and application security concepts.
-# Spring Ecosystem
-
-Spring related backend engineering concepts, framework internals and implementation patterns organized for backend engineering learning and practical development scenarios.
-
-## Areas
+## Spring Engineering Areas
 
 ### Spring Core
 
-Dependency Injection, Bean lifecycle, ApplicationContext, container internals and framework fundamentals.
+Coverage includes:
+
+- Dependency Injection
+- Bean lifecycle
+- ApplicationContext
+- Container internals
+- Bean scopes
+- Configuration management
+- Framework fundamentals
 
 ### Spring Boot
 
-Auto configuration, starter ecosystem, application lifecycle and production application concepts.
+Coverage includes:
+
+- Auto configuration
+- Starter ecosystem
+- Application lifecycle
+- Configuration management
+- Profiles
+- Production application development
+- Operational readiness
 
 ### Spring Cloud
 
-Microservice patterns, service discovery, resilience patterns and distributed system integrations.
+Coverage includes:
+
+- Service discovery
+- Distributed configuration
+- Resilience patterns
+- Load balancing
+- Distributed communication
+- Microservices integration
+- Cloud-native application patterns
 
 ### Spring Security
 
-Authentication, authorization, security architecture and application security concepts.
+Coverage includes:
 
-## Repository Goal
+- Authentication
+- Authorization
+- JWT
+- OAuth2
+- Security filters
+- API protection
+- Identity integration
 
-Organize Spring ecosystem concepts in a maintainable structure covering framework fundamentals, production engineering discussions and interview preparation material.
+### Production Spring Engineering
+
+Production Spring systems commonly require:
+
+- Performance optimization
+- Operational troubleshooting
+- Reliability engineering
+- Scalability engineering
+- Configuration governance
+- Security hardening
+- Production debugging
+- Observability integration
+
+## Engineering Goal
+
+Organize Spring ecosystem concepts in a maintainable structure covering framework fundamentals, production engineering practices, operational troubleshooting, scalability considerations, and interview preparation material.
+
+The objective is to help engineers understand both Spring implementation patterns and Spring behavior in real production environments.
+
+## Ecosystem Alignment
+
+This section focuses on Spring ecosystem engineering ownership.
+
+Related engineering concerns are intentionally covered in other repositories:
+
+- infrastructure platforms
+- deployment engineering
+- platform engineering
+- release engineering
+- large-scale architecture design
+
+This repository focuses on practical Spring implementation, framework behavior, operational characteristics, and production engineering considerations.

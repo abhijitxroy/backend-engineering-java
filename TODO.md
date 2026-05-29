@@ -1,3 +1,20 @@
+# Backend Engineering Roadmap
+
+This roadmap tracks repository evolution, production engineering coverage, operational backend engineering topics, and long-term ecosystem alignment.
+
+## Ecosystem Alignment Goals
+
+- [ ] Maintain minimal topic duplication across repositories
+- [ ] Maintain backend engineering ownership boundaries
+- [ ] Maintain production-oriented engineering focus
+- [ ] Maintain operational debugging perspective
+- [ ] Maintain observability awareness within backend ownership scope
+- [ ] Maintain reliability engineering awareness within backend systems
+- [ ] Maintain scalability engineering coverage
+- [ ] Maintain ecosystem-wide terminology consistency
+
+---
+
 ## Performance
 
 Status: Foundation Complete
@@ -218,7 +235,7 @@ Future Enhancements:
 
 ## Languages Engineering
 
-Status: Java + Python Foundation Complete
+Status: Java Engineering Expansion Complete, Python Foundation Complete
 
 Completed:
 
@@ -234,6 +251,34 @@ Completed:
 - Multithreading Basics
 - JVM Fundamentals
 - Garbage Collection Fundamentals
+- JDK11 Overview
+- HTTP Client API
+- String API Improvements
+- Collection API Improvements
+- Files API Improvements
+- Local Variable Type Inference
+- JDK17 Overview
+- Records
+- Sealed Classes
+- Pattern Matching
+- Switch Pattern Matching
+- JDK21 Overview
+- Virtual Threads
+- Structured Concurrency
+- Heap vs Stack
+- Class Loaders
+- Metaspace vs PermGen
+- Garbage Collection Deep Dive
+- G1 GC
+- ZGC
+- GC Log Analysis
+- Heap Dump Analysis
+- Thread Dump Analysis
+- Thread Dump vs Heap Dump
+- Memory Analysis
+- Memory Leak Troubleshooting
+- JIT Compiler
+- JVM Tuning
 - SOLID Principles
 - Functional Interfaces
 - Stream API
@@ -294,11 +339,8 @@ Next Improvements:
 P1
 
 - Java Generics Deep Dive
-- Lambda Expressions Deep Dive
 - Exception Handling Deep Dive
 - Java IO and NIO
- - Stream API Deep Dive
- - Optional API Deep Dive
  - Functional Programming Patterns
 - Python OOP Deep Dive
 - Python Iterators and Generators
@@ -334,7 +376,6 @@ P1
 P2
 
 - JVM Internals Deep Dive
-- Class Loader Mechanism
 - Reflection API
 - Concurrency Utilities
  - Collector Framework Deep Dive
@@ -346,8 +387,6 @@ P3
 
 - Java Memory Model
 - Unsafe API Discussion
-- Virtual Threads
-- JVM Tuning Discussions
 - Python Async Programming
 - Python Performance Discussions
 
@@ -364,17 +403,38 @@ Production Discussions:
 
 Future Enhancements:
 
-- CompletableFuture
 - ForkJoinPool
 - Lock Framework
 - VarHandle
-- Structured Concurrency
-- Pattern Matching
-- Record Classes
-- Sealed Classes
- - Structured Stream Benchmarking
- - Custom Functional Interface Examples
- - Advanced Collector Patterns
+- Advanced Collector Patterns
+
+### Java Engineering Consolidation
+
+Completed:
+
+- JDK8 learning path
+- JDK11 learning path
+- JDK17 learning path
+- JDK21 learning path
+- JVM troubleshooting track
+- Modern Java evolution coverage
+- Memory troubleshooting coverage
+- Performance engineering coverage
+- Concurrency modernization coverage
+
+Future Improvements:
+
+- Java Memory Model
+- Reflection API
+- Concurrency Utilities
+- ForkJoinPool
+- Lock Framework
+- VarHandle
+- Unsafe API Discussion
+- Advanced Collector Patterns
+- JVM Internals Deep Dive
+- Java IO and NIO
+- Collections Internal Architecture
 
 ## Microservices
 
@@ -683,3 +743,49 @@ Future Enhancements:
 - Event Schema Evolution
 - Kafka Reliability Patterns
 - Kafka Observability Deep Dive
+
+---
+
+## Repository Evolution Priorities
+
+### P1 - High Priority
+
+- API Design Deep Dive Expansion
+- Backend Reliability Engineering Patterns
+- Distributed Database Operational Patterns
+- Kafka Production Troubleshooting Workflows
+- Security Engineering Production Patterns
+- Performance Engineering Deep Dives
+- Spring Production Engineering Topics
+- Advanced Testing Engineering Workflows
+
+### P2 - Medium Priority
+
+- Production Incident Case Studies
+- Backend Scalability Engineering Patterns
+- Database Capacity Planning Workflows
+- Messaging Reliability Engineering
+- Distributed Data Consistency Patterns
+- Backend Operational Readiness Reviews
+- Production Debugging Playbooks
+
+### P3 - Long-Term Expansion
+
+- Backend Architecture Reference Patterns
+- Enterprise Backend Platform Patterns
+- Multi-Region Backend Architectures
+- Large-Scale Persistence Engineering
+- High Throughput Messaging Systems
+- Backend Governance and Standards
+- Operational Excellence References
+
+## Success Criteria
+
+- Strong interview preparation value
+- Production engineering relevance
+- Operational debugging focus
+- Scalability engineering awareness
+- Reliability engineering awareness
+- Consistent repository structure
+- Minimal duplication across ecosystem repositories
+- Long-term maintainability

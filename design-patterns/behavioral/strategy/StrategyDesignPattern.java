@@ -1,5 +1,3 @@
-package behavioral.strategy;
-
 // Client Code
 public class StrategyDesignPattern {
   public static void main(String[] args) {
@@ -7,10 +5,19 @@ public class StrategyDesignPattern {
     cart.setPaymentStrategy(new CashPaymentStrategy());
     cart.checkout(1000);
 
+    cart.setPaymentStrategy(new CreditCardPaymentStrategy());
+    cart.checkout(500);
+
     cart.setPaymentStrategy(new UpiPaymentStrategy());
     cart.checkout(800);
   }
 }
+
+// Real-world examples:
+// Payment Providers
+// Authentication Providers
+// Notification Channels
+// Pricing Engines
 
 // Strategy Interface
 interface PaymentStrategy {
@@ -54,6 +61,10 @@ class OnlineShoppingCart {
   }
 
   public void checkout(double amount) {
+    if (paymentStrategy == null) {
+      throw new IllegalStateException("Payment strategy not configured.");
+    }
+
     paymentStrategy.pay(amount);
   }
 }

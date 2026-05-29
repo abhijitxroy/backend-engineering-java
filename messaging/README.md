@@ -1,6 +1,38 @@
-# Kafka
+# Messaging Engineering
 
-Kafka is a distributed event streaming platform designed for scalable backend systems, fault tolerance and event driven architectures.
+Messaging engineering focuses on asynchronous communication, event-driven architectures, distributed coordination, scalability, and reliability within backend systems.
+
+Production messaging systems become significantly more complex when moving from local development environments into distributed production ecosystems.
+
+Messaging engineering does not operate independently from:
+
+- backend services
+- APIs
+- databases
+- caching systems
+- observability platforms
+- deployment workflows
+- reliability engineering practices
+- operational debugging workflows
+
+Kafka is one of the most widely adopted distributed event streaming platforms used for production messaging systems.
+
+## Messaging Engineering Areas
+
+Coverage includes:
+
+- Event-driven architectures
+- Message brokers
+- Publish-subscribe systems
+- Event streaming platforms
+- Consumer coordination
+- Message reliability
+- Delivery guarantees
+- Ordering strategies
+- Retry workflows
+- Dead letter queues
+- Distributed communication patterns
+- Operational messaging workflows
 
 ## Kafka Fundamentals
 
@@ -184,16 +216,35 @@ Benefits:
 - Fault tolerance
 - Async communication
 
-## Production Engineering Discussions
+## Production Messaging Engineering
 
-Examples:
+Production messaging systems commonly require:
 
-- Duplicate prevention
+- Duplicate message prevention
 - Consumer lag troubleshooting
 - Offset troubleshooting
-- Partition strategy
+- Partition strategy design
 - Throughput optimization
 - Reliability engineering
+- Capacity planning
+- Failure recovery workflows
+- Distributed observability
+- Message traceability
+- Scalability engineering
+
+## Ecosystem Alignment
+
+This section focuses on messaging engineering ownership.
+
+Related engineering concerns are intentionally covered in other repositories:
+
+- infrastructure platforms
+- deployment engineering
+- platform engineering
+- release engineering
+- large-scale architecture design
+
+This repository focuses on practical messaging implementation, event-driven communication patterns, operational behavior, and production engineering considerations.
 
 ## Structure
 
@@ -205,6 +256,19 @@ examples/
 - OffsetManagementExample.java
 - IdempotentConsumerExample.java
 
-## Notes
+## Operational Engineering Perspective
 
-Kafka enables scalable backend event streaming with reliability, ordering guarantees and fault tolerance.
+Messaging systems become critical as backend platforms scale beyond synchronous communication models.
+
+Production engineers should understand:
+
+- delivery guarantees
+- ordering trade-offs
+- consumer coordination
+- reliability patterns
+- failure recovery
+- scalability constraints
+- operational troubleshooting
+- observability workflows
+
+Messaging engineering is a core capability for building scalable and reliable distributed backend systems.

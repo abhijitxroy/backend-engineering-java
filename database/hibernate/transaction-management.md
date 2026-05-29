@@ -11,6 +11,34 @@ A transaction follows ACID properties:
 
 Transaction management is critical for enterprise backend systems and distributed applications.
 
+## Why Transaction Management Matters
+
+Transaction management directly impacts:
+
+- Data consistency
+- System reliability
+- Failure recovery
+- Application scalability
+- Distributed system behavior
+
+Many production incidents originate from incorrect transaction boundaries, propagation settings, or consistency assumptions.
+
+## Transaction Lifecycle
+
+Typical flow:
+
+```text
+Transaction Start
+       ↓
+Business Operations
+       ↓
+Validation
+       ↓
+Commit or Rollback
+```
+
+The transaction manager coordinates execution, consistency, and recovery.
+
 ## @Transactional Annotation
 
 @Transactional is used to manage transaction boundaries in Spring applications.
@@ -40,13 +68,24 @@ Default behavior:
 - Rollback on RuntimeException
 - Rollback on Error
 
-Backend engineering perspective:
+Production engineering benefits:
 
 - Reduces transaction boilerplate
 - Simplifies consistency handling
 - Improves maintainability
 
 ## Transaction Propagation
+## Propagation Comparison
+
+| Propagation | Existing Transaction | New Transaction |
+| ----------- | ------------------- | --------------- |
+| REQUIRED | Joins existing | If required |
+| REQUIRES_NEW | Suspends existing | Always |
+| SUPPORTS | Uses existing | No |
+| MANDATORY | Requires existing | No |
+| NOT_SUPPORTED | Suspends existing | No |
+| NEVER | Fails if present | No |
+| NESTED | Savepoint based | Nested scope |
 
 Propagation determines how transactions behave when one transactional method calls another.
 
@@ -189,6 +228,14 @@ Note:
 - Primarily supported using JDBC savepoints with DataSourceTransactionManager
 
 ## Isolation Levels
+## Isolation Level Comparison
+
+| Isolation Level | Dirty Reads | Non-Repeatable Reads | Phantom Reads |
+| --------------- | ----------- | -------------------- | ------------- |
+| READ_UNCOMMITTED | Possible | Possible | Possible |
+| READ_COMMITTED | Prevented | Possible | Possible |
+| REPEATABLE_READ | Prevented | Prevented | Possible |
+| SERIALIZABLE | Prevented | Prevented | Prevented |
 
 Isolation controls visibility of changes between transactions.
 
@@ -326,7 +373,7 @@ Common approaches:
 - Saga Pattern
 - Event driven consistency handling
 
-Backend engineering considerations:
+Production engineering considerations:
 
 - Eventual consistency
 - Retry mechanisms
@@ -403,6 +450,18 @@ Use case:
 - Distributed systems
 
 ## Rollback Behavior
+## Common Transaction Mistakes
+
+Common problems:
+
+- Large transaction boundaries
+- Long-running transactions
+- Excessive database locking
+- Incorrect propagation selection
+- Missing rollback handling
+- Cross-service transaction assumptions
+
+These issues can create latency, scalability, and consistency problems.
 
 Spring transaction interceptor automatically rolls back:
 
@@ -423,7 +482,58 @@ Use case:
 
 - Custom business exception handling
 
-## Backend Engineering Perspective
+## Transaction Observability
+
+Important metrics:
+
+- Transaction duration
+- Rollback count
+- Commit count
+- Lock wait time
+- Deadlock frequency
+- Database response latency
+- Connection pool utilization
+
+Production optimization should be driven by measurement and monitoring.
+
+## Production Engineering Perspective
+
+Transaction management knowledge helps with:
+
+- Production troubleshooting
+- Data consistency management
+- Failure recovery design
+- Distributed system architecture
+- Microservice reliability
+- Multi-database workflows
+- Scalability engineering
+- Operational debugging
+
+Engineers should understand both transaction abstractions and database execution behavior.
+
+## Interview Questions
+
+1. What are ACID properties?
+2. What does @Transactional do?
+3. REQUIRED vs REQUIRES_NEW?
+4. What are isolation levels?
+5. READ_COMMITTED vs REPEATABLE_READ?
+6. What causes dirty reads?
+7. What is a distributed transaction?
+8. Saga Pattern vs Two-Phase Commit?
+9. When does Spring roll back a transaction?
+10. How would you troubleshoot transaction failures in production?
+
+## Quick Revision
+
+- ACID ensures consistency and reliability.
+- @Transactional manages transaction boundaries.
+- REQUIRED is the default propagation mode.
+- REQUIRES_NEW creates an independent transaction.
+- Isolation levels control visibility.
+- Distributed consistency is difficult.
+- Saga Pattern is common in microservices.
+- Monitor transaction latency, rollbacks, and locks.
 
 Transaction management knowledge helps:
 

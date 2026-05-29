@@ -2,7 +2,22 @@
 
 SQL concepts and relational database engineering discussions organized for scalable backend systems and production engineering scenarios.
 
-## SQL Fundamentals
+## Why SQL Matters
+
+SQL remains the foundation of most enterprise backend systems.
+
+SQL knowledge directly impacts:
+
+- Query performance
+- Database scalability
+- Application reliability
+- Reporting systems
+- Data consistency
+- Production troubleshooting
+
+Strong SQL skills are essential for backend engineering, database optimization, and system design.
+
+## SQL Engineering Areas
 
 Coverage:
 
@@ -21,6 +36,26 @@ Coverage:
 - JOIN Operations
 - Window Functions
 
+## SQL Execution Flow
+
+Typical execution order:
+
+```text
+FROM
+ ↓
+WHERE
+ ↓
+GROUP BY
+ ↓
+HAVING
+ ↓
+SELECT
+ ↓
+ORDER BY
+```
+
+Understanding execution flow helps explain query behavior and performance characteristics.
+
 ## DELETE vs TRUNCATE
 
 DELETE:
@@ -34,6 +69,16 @@ TRUNCATE:
 - Removes complete table data
 - Faster operation
 - Resets identity counter
+
+## DELETE vs TRUNCATE Comparison
+
+| Feature | DELETE | TRUNCATE |
+| ------- | ------ | -------- |
+| WHERE Support | Yes | No |
+| Row Removal | Selected Rows | Entire Table |
+| Logging | More | Less |
+| Speed | Slower | Faster |
+| Identity Reset | Usually No | Usually Yes |
 
 ## WHERE vs HAVING
 
@@ -78,24 +123,33 @@ DISTINCT:
 Examples:
 
 - COUNT()
-- SUM()
-- AVG()
-- MAX()
-- MIN()
 
 COUNT():
+
 - Counts records
 
+- SUM()
+
 SUM():
+
 - Calculates total value
 
+- AVG()
+
 AVG():
+
 - Calculates average
 
+- MAX()
+
 MAX():
+
 - Returns highest value
 
+- MIN()
+
 MIN():
+
 - Returns lowest value
 
 ## CASE Statement
@@ -142,6 +196,17 @@ RIGHT JOIN:
 
 FULL JOIN:
 - Returns matching and non matching records from both tables
+
+## Join Selection Guide
+
+| Join Type | Typical Usage |
+| --------- | ------------- |
+| INNER JOIN | Matching records only |
+| LEFT JOIN | Optional relationships |
+| RIGHT JOIN | Less common reporting queries |
+| FULL JOIN | Data reconciliation |
+| SELF JOIN | Hierarchical data |
+| CROSS JOIN | Combinational datasets |
 
 ## UNION vs UNION ALL
 
@@ -203,6 +268,14 @@ PARTITION BY department
 FROM employee;
 ```
 
+Production use cases:
+
+- Ranking systems
+- Leaderboards
+- Analytics dashboards
+- Running totals
+- Trend analysis
+
 ## Function vs Procedure
 
 Function:
@@ -242,6 +315,12 @@ Materialized View:
 
 - Stores actual computed data
 
+General guidance:
+
+- Views prioritize simplicity and consistency.
+- Materialized Views prioritize performance.
+- Materialized Views require refresh management.
+
 ## View vs Synonym
 
 View:
@@ -279,6 +358,17 @@ Unique Key:
 Foreign Key:
 
 - Maintains relationship between tables
+
+## Database Relationships
+
+Common relationship types:
+
+- One-to-One
+- One-to-Many
+- Many-to-One
+- Many-to-Many
+
+Relationship design directly impacts normalization, query complexity, and scalability.
 
 ## PK vs FK
 
@@ -377,6 +467,20 @@ Approaches:
 - Optimize JOIN operations
 - Reduce unnecessary scans
 
+## Common SQL Performance Problems
+
+Common issues:
+
+- Missing indexes
+- Full table scans
+- Excessive joins
+- Large result sets
+- N+1 query patterns
+- Poor filtering conditions
+- Inefficient sorting
+
+Performance tuning should always be driven by execution plan analysis.
+
 ## SQL Performance Discussions
 
 Examples:
@@ -396,16 +500,41 @@ Validation approaches:
 - Query execution plan
 - Index validation
 
-## Production Engineering Discussions
+## Production SQL Engineering
 
-Examples:
+Production systems commonly require:
 
 - Query tuning
-- Database scalability
-- Large table optimization
-- Performance troubleshooting
-- Backend persistence optimization
+- Execution plan analysis
+- Database optimization
+- Large table management
+- Reporting optimization
+- Capacity planning
+- Database observability
+- Scalability engineering
+- Reliability engineering
+- Operational debugging
 
-## Notes
+## Interview Questions
 
-SQL remains foundational for backend engineering systems requiring strong consistency and relational modeling.
+1. DELETE vs TRUNCATE?
+2. WHERE vs HAVING?
+3. GROUP BY vs DISTINCT?
+4. INNER JOIN vs LEFT JOIN?
+5. UNION vs UNION ALL?
+6. What are Window Functions?
+7. View vs Materialized View?
+8. Primary Key vs Unique Key?
+9. How do you optimize slow SQL queries?
+10. How do you analyze execution plans?
+
+## Quick Revision
+
+- SQL is foundational for relational databases.
+- WHERE filters rows before grouping.
+- HAVING filters grouped results.
+- UNION removes duplicates.
+- UNION ALL is faster.
+- Window Functions perform calculations across result sets.
+- Materialized Views store computed data.
+- Always validate performance using execution plans.

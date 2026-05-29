@@ -2,9 +2,22 @@
 
 # Security
 
-Backend security concepts and application protection discussions organized for scalable systems, secure API development and production engineering scenarios.
+Backend security concepts and application protection discussions organized for scalable systems, secure API development, operational reliability, and production engineering scenarios.
 
-## Areas
+Production security systems become significantly more complex when moving from local development environments into large-scale backend ecosystems.
+
+Security engineering does not operate independently from:
+
+- APIs
+- databases
+- messaging systems
+- identity providers
+- observability platforms
+- deployment workflows
+- reliability engineering practices
+- operational debugging workflows
+
+## Security Engineering Areas
 
 ### Security Fundamentals
 
@@ -19,8 +32,8 @@ Coverage includes:
 - JWT
 - OAuth2
 - Basic Authentication
-- Session Based Authentication
-- Token Based Authentication
+- Session-Based Authentication
+- Token-Based Authentication
 - Password Hashing
 - CORS
 - CSRF
@@ -29,23 +42,56 @@ Coverage includes:
 - API Security
 - OWASP Top 10
 
-### Production Engineering Perspective
+### Production Security Engineering
 
-Security discussions for scalable backend systems and production architecture considerations.
+Production security systems commonly require:
 
-Examples:
+- Secure API design
+- Identity management
+- Secret management
+- Threat protection
+- Access control
+- Monitoring and auditing
+- Security hardening
+- Vulnerability management
+- Security incident response
+- Compliance awareness
+- Operational security reviews
 
-- Secure API Design
-- Identity Management
-- Secret Management
-- Threat Protection
-- Access Control
-- Monitoring and Auditing
-- Security Hardening
+### Operational Engineering Perspective
 
-## Repository Goal
+Production security systems must be designed with:
 
-Organize backend security engineering concepts in a maintainable structure covering backend engineering fundamentals, API protection strategies and production engineering considerations.
+- reliability
+- scalability
+- maintainability
+- debuggability
+- traceability
+- operational visibility
+- risk awareness
+- defense in depth
+
+as first-class engineering concerns.
+
+## Engineering Goal
+
+Organize backend security engineering concepts in a maintainable structure covering security fundamentals, API protection strategies, operational troubleshooting, risk mitigation, and production engineering practices.
+
+The objective is to help engineers understand both security implementation and security behavior in real production environments.
+
+## Ecosystem Alignment
+
+This section focuses on backend security engineering ownership.
+
+Related engineering concerns are intentionally covered in other repositories:
+
+- infrastructure platforms
+- deployment engineering
+- platform engineering
+- release engineering
+- large-scale architecture design
+
+This repository focuses on practical application security, API protection, identity integration, operational behavior, and production engineering considerations.
 
 ## Structure
 
